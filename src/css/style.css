@@ -7,8 +7,10 @@
     margin: 0 auto;
 }
 
-.content
+/*content*/
+.content 
 {
+    background-color: #F2F2F2;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -293,13 +295,6 @@ path
     animation: heart 800ms forwards;
     opacity: 1;
 }
-
-
-
-
-
-
-
 footer 
 {
   background-color: #333333;
@@ -337,3 +332,66 @@ footer .footer-a
   text-decoration: none;
   color: white;
 }
+
+@keyframes heart {
+    0% {
+      background-color: white;
+    }
+    10% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, white 0%);
+    }
+    15% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 15%, white 5%);
+    }
+    20% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, white 10%);
+    }
+    25% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 25%, white 15%);
+    }
+    30% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, white 20%);
+    }
+    35% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 35%, white 25%);
+    }
+    40% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, white 30%);
+    }
+    45% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 45%, white 35%);
+    }
+    50% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, white 40%);
+    }
+    55% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 55%, white 45%);
+    }
+    60% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, white 50%);
+    }
+    65% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 65%, white 55%);
+    }
+    70% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, white 60%);
+    }
+    75% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 75%, white 65%);
+    }
+    80% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, white 70%);
+    }
+    85% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%, white 75%);
+    }
+    90% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, white 80%);
+    }
+    95% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 95%, white 85%);
+    }
+    100% {
+      background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%);
+    }
+  }
