@@ -1,0 +1,338 @@
+@import "https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap";
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+.content {
+	background-color: #F2F2F2;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	animation: affich 5s;
+	width: 100%;
+}
+.header-logo {
+	text-align: center;
+	font-family: "Shrikhand", serif;
+	font-size: 2rem;
+}
+.search{
+    background-color: #d9d9d9;
+	text-align: center;
+	border-top: solid 3px #bfbfbf;
+	padding: 10px 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 20px;
+    @media screen and (min-width:768px) and (max-width:1023px){
+        height: 40px;
+        font-size: 1.8rem;
+    }
+    @media screen and (min-width:1024px){
+        height: 30px;
+        font-size: 1.5rem;
+    }
+    .search-input{
+        border: none;
+		background-color: #d9d9d9;
+		width: 130px;
+		height: auto;
+		margin: 0 auto;
+		font-family: "Roboto", serif;
+		font-size: 1rem;
+        text-align: center;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            font-size: 1.4rem;
+            width: 190px;
+        }
+        @media screen and (min-width:1025px){
+            font-size: 1.5rem;
+            width: 200px;
+            text-align: left;
+        }
+        &::placeholder{
+            color: black;
+        }
+        &:focus{
+            &::placeholder{
+                color: transparent;
+            }
+        }
+    }
+}
+
+.cont-one{
+    background-color: #F2F2F2;
+	text-align: center;
+	padding: 20px 20px;
+    .cont-one-booking{
+        font-family: "Roboto", serif;
+		font-size: 1.8rem;
+		font-weight: 700;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            font-size: 1.8rem;
+        }
+        @media screen and (min-width:1024px){
+            font-size: 2rem;
+        }
+    }
+    .cont-one-discovery{
+        font-family: "Roboto", serif;
+		font-size: 1rem;
+		padding-bottom: 20px;
+		width: 80%;
+		margin: 0px auto;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            font-size: 1.8rem;
+        }
+        @media screen and (min-width:1024px){
+            font-size: 1.5rem;
+        }
+    }
+    .exploration{
+        text-align: center;
+		margin-top: 20px;
+		color: white;
+		font-family: "Roboto", serif;
+		font-size: 1rem;
+		border: transparent;
+		border-radius: 30px;
+		width: auto;
+		padding: 10px 20px;
+		height: 40px;
+		background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+		box-shadow: 4px 4px 9px #cccccc;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            font-size: 1.4rem;
+        	height: 50px;
+        	padding: 10px 35px;
+        }
+        @media screen and (min-width:1024px){
+            font-size: 1.5rem;
+        	height: 60px;
+        	padding: 10px 55px;
+        }
+        &:hover{
+            background: linear-gradient(to right bottom, #ff93e1, #ae80e5);
+			box-shadow: 4px 4px 4px #bfbfbf;
+        }
+    }
+}
+
+.cont-two {
+	.cont-two-how {
+		font-family: "Roboto", serif;
+		font-size: 1.8rem;
+		font-weight: 600;
+		padding: 20px 20px;
+	}
+	.cont-two-btn {
+		border: solid 1px #F2F2F2;
+		border-radius: 20px;
+		padding: 10px 25px;
+		margin: 20px 20px;
+		font-family: "Roboto", serif;
+		font-weight: 600;
+		font-size: 1rem;
+		position: relative;
+		box-shadow: 4px 4px 9px #d9d9d9;
+		&:hover {
+			background-color: #ffe9f9;
+			box-shadow: 4px 4px 4px #d9d9d9;
+		}
+	}
+	.cont-two-numb {
+		background-color: #9356DC;
+		border-radius: 50%;
+		width: 20px;
+		line-height: 20px;
+		position: absolute;
+		left: -10px;
+		top: 10px;
+		text-align: center;
+		color: white;
+		font-size: 0.6rem;
+	}
+	.cont-two-icon {
+		padding-right: 50px;
+	}
+}
+.cont-three {
+	background-color: #F2F2F2;
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding-bottom: 20px;
+	.cont-three-which {
+		font-family: "Roboto", serif;
+		font-size: 2rem;
+		font-weight: 600;
+		padding: 20px 15px;
+	}
+	.cont-three-card {
+		width: 90%;
+		height: 260px;
+		border: solid 2px #F2F2F2;
+		border-radius: 20px;
+		box-shadow: 6px 8px 9px #d9d9d9;
+		background-color: white;
+		position: relative;
+		margin: 20px auto;
+		.menu-link {
+			text-decoration: none;
+			color: black;
+			font-size: 1rem;
+			.cont-three-img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-top-right-radius: 20px;
+				border-top-left-radius: 20px;
+			}
+			.cont-three-name {
+				font-family: "Roboto", serif;
+				font-size: 1.3rem;
+				font-weight: 600;
+				padding: 5px 10px;
+			}
+			.cont-three-town {
+				font-family: "Roboto", serif;
+				font-size: 1.2rem;
+				padding: 0 10px 10px 10px;
+			}
+		}
+		.cont-three-heart {
+			border: none;
+			position: absolute;
+			right: 20px;
+			bottom: 35px;
+			color: white;
+			background-color: white;
+			.fa-heart {
+				position: absolute;
+				left: 3px;
+				top: 6px;
+				width: 10px;
+				height: 10px;
+			}
+			.far {
+				font-size: 1rem;
+				opacity: 1;
+				color: black;
+				&:hover {
+					display: none;
+				}
+			}
+			.cont-three-heart-one {
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 23px;
+				height: 23px;
+				background-color: white;
+				clip-path: url("#cont-three-path-one");
+				opacity: 0;
+				&:hover {
+					animation: heart 800ms forwards;
+					opacity: 1;
+				}
+			}
+			.cont-three-heart-two {
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 23px;
+				height: 23px;
+				background-color: white;
+				clip-path: url(#cont-three-path-two);
+				opacity: 0;
+				&:hover {
+					animation: heart 800ms forwards;
+					opacity: 1;
+				}
+			}
+			.cont-three-heart-three {
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 23px;
+				height: 23px;
+				background-color: white;
+				clip-path: url(#cont-three-path-three);
+				opacity: 0;
+				&:hover {
+					animation: heart 800ms forwards;
+					opacity: 1;
+				}
+			}
+			.cont-three-heart-four {
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 23px;
+				height: 23px;
+				background-color: white;
+				clip-path: url(#cont-three-path-four);
+				opacity: 0;
+				&:hover {
+					animation: heart 800ms forwards;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+path {
+	border-color: black 1px solid;
+}
+
+footer{
+    background-color: #333333;
+	color: white;
+    .footer-logo{
+        font-family: "Shrikhand", serif;
+		font-size: 1.3rem;
+		padding: 20px 10px 10px 10px;
+		text-align: left;
+		margin-left: 10px;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            font-size: 1.6rem;
+        }
+        @media screen and (min-width:1024px){
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .footer-text{
+        font-family: "Roboto", serif;
+		font-size: 1rem;
+		padding: 10px 10px 10px 10px;
+		margin-left: 10px;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            font-size: 1.4rem;
+        }
+        @media screen and (min-width:1024px){
+            font-size: 1rem;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .footer-menu{
+        text-align: left;
+    }
+    .fas.fa-utensils{
+        padding-right: 17px;
+    }
+    .fas.fa-hands-helping{
+        padding-right: 10px;
+    }
+    .footer-a{
+        text-decoration: none;
+		color: white;
+    }
+}
