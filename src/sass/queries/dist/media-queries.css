@@ -1,0 +1,198 @@
+/*queries container */
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1450px;
+  }
+}
+/*queries content */
+/* queries header */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-logo {
+    height: auto;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header-logo {
+    height: auto;
+    font-size: 3.3rem;
+    text-align: center;
+  }
+}
+/*queries search */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .search {
+    height: 40px;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .search {
+    height: 30px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .search .search-input {
+    font-size: 1.4rem;
+    width: 190px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .search .search-input {
+    font-size: 1.5rem;
+    width: 200px;
+    text-align: left;
+  }
+}
+/*queries cont-one */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-one .cont-one-booking {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-one .cont-one-booking {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-one .cont-one-discovery {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-one .cont-one-discovery {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-one .cont-one-explorartion {
+    font-size: 1.4rem;
+    height: 50px;
+    padding: 10px 35px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-one .cont-one-explorartion {
+    font-size: 1.5rem;
+    height: 60px;
+    padding: 10px 55px;
+  }
+}
+/*queries cont-two */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-two .cont-two-how {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-two .cont-two-how {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-two .cont-two-btn {
+    font-size: 1.4rem;
+    padding-left: 35px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-two .cont-two-btn {
+    font-size: 1.5rem;
+    width: 30%;
+    margin: 20px auto;
+    padding-left: 35px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-two .cont-two-numb {
+    font-size: 1rem;
+    width: 30px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-two .cont-two-numb {
+    font-size: 1.2rem;
+    width: 35px;
+    line-height: 35px;
+    left: -15px;
+    top: 5px;
+  }
+}
+/*queries cont-three */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-three .cont-three-which {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-three .cont-three-which {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-three .cont-three-listing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-three .cont-three-card {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-three .cont-three-card {
+    height: 360px;
+    width: 85%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cont-three .cont-three-card .menu-link {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-three .cont-three-card .menu-link {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-three .cont-three-card .menu-link .cont-three-img {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cont-three .cont-three-card .cont-three-heart .fa-heart {
+    left: 3px;
+  }
+}
+/*queries footer */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer .footer-logo {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .footer-logo {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer .footer-link {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .footer-menu {
+    text-align: center;
+  }
+  footer .footer-link {
+    font-size: 1rem;
+  }
+}
