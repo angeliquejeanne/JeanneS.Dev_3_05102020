@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap")
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap")
 
 .container
   width: 100%
@@ -13,6 +13,7 @@
   position: relative
   overflow: hidden
   z-index: 1
+  -webkit-animation: affich 5s
   animation: affich 5s
   width: 100%
 
@@ -44,11 +45,12 @@
     font-size: 1rem
     text-align: center
 
-    &::placeholder
+    &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
       color: black
 
-    &:focus::placeholder
-      color: transparent
+    &:focus
+      &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+        color: transparent
 
 /*cont-one
 
@@ -83,11 +85,15 @@
     width: auto
     padding: 10px 20px
     height: 40px
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC))
     background: linear-gradient(to right bottom, #FF79DA, #9356DC)
+    -webkit-box-shadow: 4px 4px 9px #cccccc
     box-shadow: 4px 4px 9px #cccccc
 
     &:hover
+      background: -webkit-gradient(linear, left top, right bottom, from(#ff93e1), to(#ae80e5))
       background: linear-gradient(to right bottom, #ff93e1, #ae80e5)
+      -webkit-box-shadow: 4px 4px 4px #bfbfbf
       box-shadow: 4px 4px 4px #bfbfbf
 
 /*cont-two
@@ -108,10 +114,12 @@
     font-weight: 600
     font-size: 1rem
     position: relative
+    -webkit-box-shadow: 4px 4px 9px #d9d9d9
     box-shadow: 4px 4px 9px #d9d9d9
 
     &:hover
       background-color: #ffe9f9
+      -webkit-box-shadow: 4px 4px 4px #d9d9d9
       box-shadow: 4px 4px 4px #d9d9d9
 
   .cont-two-numb
@@ -148,6 +156,7 @@
     height: 260px
     border: solid 2px #F2F2F2
     border-radius: 20px
+    -webkit-box-shadow: 6px 8px 9px #d9d9d9
     box-shadow: 6px 8px 9px #d9d9d9
     background-color: white
     position: relative
@@ -161,6 +170,7 @@
       .cont-three-img
         width: 100%
         height: 200px
+        -o-object-fit: cover
         object-fit: cover
         border-top-right-radius: 20px
         border-top-left-radius: 20px
@@ -195,6 +205,15 @@
         font-size: 1rem
         opacity: 1
         color: black
+        display: -ms-grid
+        display: grid
+        -webkit-transition: all .5s
+        -o-transition: all .5s
+        transition: all .5s
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
 
         &:hover
           display: none
@@ -206,7 +225,8 @@
         width: 23px
         height: 23px
         background-color: white
-        clip-path: url("#cont-three-path-one")
+        -webkit-clip-path: url(#cont-three-path-one)
+        clip-path: url(#cont-three-path-one)
         opacity: 0
 
 /*cont-three-heart
@@ -216,6 +236,7 @@ path
 
 .cont-three .cont-three-card .cont-three-heart
   .cont-three-heart-one:hover
+    -webkit-animation: heart 800ms forwards
     animation: heart 800ms forwards
     opacity: 1
 
@@ -226,10 +247,12 @@ path
     width: 23px
     height: 23px
     background-color: white
+    -webkit-clip-path: url(#cont-three-path-two)
     clip-path: url(#cont-three-path-two)
     opacity: 0
 
     &:hover
+      -webkit-animation: heart 800ms forwards
       animation: heart 800ms forwards
       opacity: 1
 
@@ -240,10 +263,12 @@ path
     width: 23px
     height: 23px
     background-color: white
+    -webkit-clip-path: url(#cont-three-path-three)
     clip-path: url(#cont-three-path-three)
     opacity: 0
 
     &:hover
+      -webkit-animation: heart 800ms forwards
       animation: heart 800ms forwards
       opacity: 1
 
@@ -254,10 +279,12 @@ path
     width: 23px
     height: 23px
     background-color: white
+    -webkit-clip-path: url(#cont-three-path-four)
     clip-path: url(#cont-three-path-four)
     opacity: 0
 
     &:hover
+      -webkit-animation: heart 800ms forwards
       animation: heart 800ms forwards
       opacity: 1
 
@@ -292,63 +319,164 @@ footer
     text-decoration: none
     color: white
 
+@-webkit-keyframes heart
+  from
+    background-color: white
+
+  10%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(10%, #9356DC), to(0%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, white 0%)
+
+  15%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(15%, #9356DC), to(5%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 15%, white 5%)
+
+  20%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(20%, #9356DC), to(10%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, white 10%)
+
+  25%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(25%, #9356DC), to(15%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 25%, white 15%)
+
+  30%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(30%, #9356DC), to(20%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, white 20%)
+
+  35%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(35%, #9356DC), to(25%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 35%, white 25%)
+
+  40%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(40%, #9356DC), to(30%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, white 30%)
+
+  45%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(45%, #9356DC), to(35%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 45%, white 35%)
+
+  50%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(40%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, white 40%)
+
+  55%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(55%, #9356DC), color-stop(45%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 55%, white 45%)
+
+  60%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(50%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, white 50%)
+
+  65%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(65%, #9356DC), color-stop(55%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 65%, white 55%)
+
+  70%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(60%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, white 60%)
+
+  75%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(75%, #9356DC), color-stop(65%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 75%, white 65%)
+
+  80%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(70%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, white 70%)
+
+  85%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(85%, #9356DC), color-stop(75%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%, white 75%)
+
+  90%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(80%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, white 80%)
+
+  95%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(95%, #9356DC), color-stop(85%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 95%, white 85%)
+
+  to
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(100%, #9356DC), color-stop(90%, white))
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%)
+
 @keyframes heart
   0%
     background-color: white
 
   10%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(10%, #9356DC), color-stop(0%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, white 0%)
 
   15%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(15%, #9356DC), color-stop(5%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 15%, white 5%)
 
   20%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(20%, #9356DC), color-stop(10%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, white 10%)
 
   25%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(25%, #9356DC), color-stop(15%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 25%, white 15%)
 
   30%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(30%, #9356DC), color-stop(20%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, white 20%)
 
   35%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(35%, #9356DC), color-stop(25%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 35%, white 25%)
 
   40%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(40%, #9356DC), color-stop(30%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, white 30%)
 
   45%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(45%, #9356DC), color-stop(35%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 45%, white 35%)
 
   50%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(50%, #9356DC), color-stop(40%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, white 40%)
 
   55%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(55%, #9356DC), color-stop(45%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 55%, white 45%)
 
   60%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(60%, #9356DC), color-stop(50%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, white 50%)
 
   65%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(65%, #9356DC), color-stop(55%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 65%, white 55%)
 
   70%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(70%, #9356DC), color-stop(60%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, white 60%)
 
   75%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(75%, #9356DC), color-stop(65%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 75%, white 65%)
 
   80%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(80%, #9356DC), color-stop(70%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, white 70%)
 
   85%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(85%, #9356DC), color-stop(75%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%, white 75%)
 
   90%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(90%, #9356DC), color-stop(80%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, white 80%)
 
   95%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(95%, #9356DC), color-stop(85%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 95%, white 85%)
 
   100%
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), color-stop(100%, #9356DC), color-stop(90%, white))
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%)
+
+/*# sourceMappingURL=style.css.map

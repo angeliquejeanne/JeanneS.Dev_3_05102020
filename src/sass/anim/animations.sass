@@ -6,7 +6,9 @@
   bottom: 70%
   width: 80%
   background-color: white
+  -webkit-animation: affich-loading 3s forwards
   animation: affich-loading 3s forwards
+  -webkit-animation-delay: 3s
   animation-delay: 3s
 
   .loading-message
@@ -21,115 +23,129 @@
       font-family: "Shrikhand", serif
       font-size: 1.5rem
 
-  .loading
+  .spinner
     margin: 100px auto
     width: 60px
     height: 60px
     position: fixed
     left: 45%
 
-    .loading-circle
+    div
       width: 100%
       height: 100%
       position: absolute
       left: 0
       top: 0
 
-      &:before
-        content: ""
-        display: block
-        margin: 0 auto
-        width: 15%
-        height: 15%
-        background: #9356DC
-        border-radius: 100%
-        animation: loading-circle 1.2s infinite ease-in-out both
+div.spinner
+  position: relative
+  width: 54px
+  height: 54px
+  display: inline-block
 
-    .loading-circle2
-      transform: rotate(30deg)
+.pre-load div.spinner div
+  width: 12%
+  height: 26%
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC))
+  background: linear-gradient(to left bottom, #FF79DA, #9356DC)
+  position: absolute
+  left: 44.5%
+  top: 37%
+  opacity: 0
+  -webkit-animation: fade 1s linear infinite
+  -webkit-border-radius: 50px
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
 
-      &:before
-        animation-delay: -1.1s
+div.spinner div
+  &.loading-circle1
+    -webkit-transform: rotate(0deg) translate(0, -142%)
+    -webkit-animation-delay: 0s
 
-    .loading-circle3
-      transform: rotate(60deg)
+  &.loading-circle2
+    -webkit-transform: rotate(30deg) translate(0, -142%)
+    -webkit-animation-delay: -0.9167s
 
-      &:before
-        animation-delay: -1s
+  &.loading-circle3
+    -webkit-transform: rotate(60deg) translate(0, -142%)
+    -webkit-animation-delay: -0.833s
 
-    .loading-circle4
-      transform: rotate(90deg)
+  &.loading-circle4
+    -webkit-transform: rotate(90deg) translate(0, -142%)
+    -webkit-animation-delay: -0.75s
 
-      &:before
-        animation-delay: -0.9s
+  &.loading-circle5
+    -webkit-transform: rotate(120deg) translate(0, -142%)
+    -webkit-animation-delay: -0.667s
 
-    .loading-circle5
-      transform: rotate(120deg)
+  &.loading-circle6
+    -webkit-transform: rotate(150deg) translate(0, -142%)
+    -webkit-animation-delay: -0.5833s
 
-      &:before
-        animation-delay: -0.8s
+  &.loading-circle7
+    -webkit-transform: rotate(180deg) translate(0, -142%)
+    -webkit-animation-delay: -0.5s
 
-    .loading-circle6
-      transform: rotate(150deg)
+  &.loading-circle8
+    -webkit-transform: rotate(210deg) translate(0, -142%)
+    -webkit-animation-delay: -0.41667s
 
-      &:before
-        animation-delay: -0.7s
+  &.loading-circle9
+    -webkit-transform: rotate(240deg) translate(0, -142%)
+    -webkit-animation-delay: -0.333s
 
-    .loading-circle7
-      transform: rotate(180deg)
+  &.loading-circle10
+    -webkit-transform: rotate(270deg) translate(0, -142%)
+    -webkit-animation-delay: -0.25s
 
-      &:before
-        animation-delay: -0.6s
+  &.loading-circle11
+    -webkit-transform: rotate(300deg) translate(0, -142%)
+    -webkit-animation-delay: -0.1667s
 
-    .loading-circle8
-      transform: rotate(210deg)
+  &.loading-circle12
+    -webkit-transform: rotate(330deg) translate(0, -142%)
+    -webkit-animation-delay: -0.0833s
 
-      &:before
-        animation-delay: -0.5s
+  &.Loading-circle13
+    -webkit-transform: rotate(330deg) translate(0, -142%)
+    -webkit-animation-delay: -0.05s
 
-    .loading-circle9
-      transform: rotate(240deg)
-
-      &:before
-        animation-delay: -0.4s
-
-    .loading-circle10
-      transform: rotate(270deg)
-
-      &:before
-        animation-delay: -0.3s
-
-    .loading-circle11
-      transform: rotate(300deg)
-
-      &:before
-        animation-delay: -0.2s
-
-    .loading-circle12
-      transform: rotate(330deg)
-
-      &:before
-        animation-delay: -0.1s
-
-    .loading-circle13
-      transform: rotate(360deg)
-
-      &:before
-        animation-delay: -0.1s
-
-@keyframes loading-circle
-  0%, 39%, 100%
-    opacity: 0
-
-  40%
+@-webkit-keyframes fade
+  from
     opacity: 1
+
+  to
+    opacity: 0.25
+
+@keyframes fade
+  from
+    opacity: 1
+
+  to
+    opacity: 0.25
+
+@-webkit-keyframes affich-loading
+  from
+    opacity: 1
+
+  to
+    opacity: 0.25
 
 @keyframes affich-loading
-  0%
+  from
     opacity: 1
 
-  100%
+  to
+    opacity: 0.25
+
+@-webkit-keyframes affich
+  0%
     opacity: 0
+
+  80%
+    opacity: 0
+
+  100%
+    opacity: 1
 
 @keyframes affich
   0%
@@ -140,3 +156,5 @@
 
   100%
     opacity: 1
+
+/*# sourceMappingURL=animations.css.map

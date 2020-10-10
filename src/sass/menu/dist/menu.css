@@ -135,8 +135,8 @@
   margin-bottom: 10px;
 }
 .content .content-menu .card-title-one {
-  -webkit-animation: card-title 1000ms ease-in-out;
-  animation: card-title 1000ms ease-in-out;
+  -webkit-animation: card-title 1000ms ease-in-out backwards;
+  animation: card-title 1000ms ease-in-out backwards;
 }
 .content .content-menu .card-title-two {
   -webkit-animation: card-title 1000ms 900ms ease-in-out backwards;
@@ -161,20 +161,20 @@
 }
 .content .content-menu .cont-meal:hover .cont-meal-icon {
   background-color: #99E2D0;
+  width: 20%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
   -webkit-transition: 800ms;
   transition: 800ms;
-  width: 20%;
 }
-.content .content-menu .cont-meal:hover .cont-meal-icon .fa-check-circle {
+.content .content-menu .cont-meal:hover .fa-check-circle {
   -webkit-transform: rotate(-360deg);
   transform: rotate(-360deg);
   opacity: 1;
   font-size: 20px;
-  -webkit-transition: 400ms;
+  -webkit-animation-delay: 400ms;
   transition: 400ms;
 }
 .content .content-menu .cont-meal .cont-meal-icon {
@@ -257,7 +257,7 @@
   bottom: 10px;
 }
 .content .content-menu .meal-entree-one {
-  -webkit-animation: card-title 1000ms 200ms ease-in-out backwards;
+  -webkit-animation: card-title 1000ms 200ms;
   animation: card-title 1000ms 200ms ease-in-out backwards;
 }
 .content .content-menu .meal-entree-two {
