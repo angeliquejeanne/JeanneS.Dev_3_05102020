@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /*header */
@@ -320,32 +319,6 @@
   box-shadow: 4px 4px 4px #bfbfbf;
 }
 
-/*type durée et sens de l'animation ici le titre monte au chargement de la page */
-/*animation sur card-title one,two & three */
-@-webkit-keyframes card-title {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes card-title {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 footer {
   background-color: #333333;
   color: white;
