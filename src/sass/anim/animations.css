@@ -147,7 +147,6 @@ div.spinner div.Loading-circle13
   to {opacity: 0.25;}
 }
 
-
 @-webkit-keyframes affich {
   0% {
     opacity: 0;
@@ -168,34 +167,6 @@ div.spinner div.Loading-circle13
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-}
-
-/*type durée et sens de l'animation ici le titre monte au chargement de la page */
-/*animation sur card-title one,two & three */
-@-webkit-keyframes card-title {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes card-title {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
     opacity: 1;
   }
 }
