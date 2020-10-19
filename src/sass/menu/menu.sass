@@ -138,8 +138,8 @@
       margin-bottom: 10px
 
     .card-title-one
-      -webkit-animation: card-title 1000ms ease-in-out backwards
-      animation: card-title 1000ms ease-in-out backwards
+      -webkit-animation: card-title 1000ms ease-in-out
+      animation: card-title 1000ms ease-in-out
 
     .card-title-two
       -webkit-animation: card-title 1000ms 900ms ease-in-out backwards
@@ -162,23 +162,22 @@
       display: flex
       cursor: pointer
 
-      &:hover
-        .cont-meal-icon
-          background-color: #99E2D0
-          width: 20%
-          -webkit-transform: scale(1)
-          transform: scale(1)
-          -webkit-transform-origin: 50% 0%
-          transform-origin: 50% 0%
-          -webkit-transition: 800ms
-          transition: 800ms
+      &:hover .cont-meal-icon
+        background-color: #99E2D0
+        -webkit-transform: scale(1)
+        transform: scale(1)
+        -webkit-transform-origin: 50% 0%
+        transform-origin: 50% 0%
+        -webkit-transition: 800ms
+        transition: 800ms
+        width: 20%
 
         .fa-check-circle
           -webkit-transform: rotate(-360deg)
           transform: rotate(-360deg)
           opacity: 1
           font-size: 20px
-          -webkit-animation-delay: 400ms
+          -webkit-transition: 400ms
           transition: 400ms
 
       .cont-meal-icon
@@ -261,7 +260,7 @@
           bottom: 10px
 
     .meal-entree-one
-      -webkit-animation: card-title 1000ms 200ms
+      -webkit-animation: card-title 1000ms 200ms ease-in-out backwards
       animation: card-title 1000ms 200ms ease-in-out backwards
 
     .meal-entree-two
@@ -322,6 +321,30 @@
           background: linear-gradient(to right bottom, #ff93e1, #ae80e5)
           -webkit-box-shadow: 4px 4px 4px #bfbfbf
           box-shadow: 4px 4px 4px #bfbfbf
+
+/*type durée et sens de l'animation ici le titre monte au chargement de la page
+/*animation sur card-title one,two & three
+@-webkit-keyframes card-title
+  0%
+    -webkit-transform: translateY(20px)
+    transform: translateY(20px)
+    opacity: 0
+
+  100%
+    -webkit-transform: translateY(0px)
+    transform: translateY(0px)
+    opacity: 1
+
+@keyframes card-title
+  0%
+    -webkit-transform: translateY(20px)
+    transform: translateY(20px)
+    opacity: 0
+
+  100%
+    -webkit-transform: translateY(0px)
+    transform: translateY(0px)
+    opacity: 1
 
 footer
   background-color: #333333

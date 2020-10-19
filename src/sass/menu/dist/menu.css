@@ -6,7 +6,6 @@
   position: relative;
   margin-bottom: 15px;
 }
-
 .header .return-home {
   position: absolute;
   left: 10px;
@@ -24,18 +23,15 @@
 .content {
   background-color: #F2F2F2;
 }
-
 .content .pict {
   width: 100%;
 }
-
 .content .pict .img {
   height: 200px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 .content .content-menu {
   background-color: #F2F2F2;
   border: solid 1px #F2F2F2;
@@ -44,21 +40,18 @@
   position: relative;
   top: -60px;
 }
-
 .content .content-menu .description {
   font-family: "Shrikhand", serif;
   font-size: 1.2rem;
   padding: 20px 30px;
   position: relative;
 }
-
 .content .content-menu .cont-heart {
   border: none;
   position: absolute;
   right: 50px;
   bottom: 40px;
 }
-
 .content .content-menu .cont-heart .cont-heart-one {
   position: absolute;
   left: 0;
@@ -71,7 +64,6 @@
   clip-path: url(#cont-path-one);
   opacity: 0;
 }
-
 .content .content-menu .cont-heart .cont-heart-two {
   position: absolute;
   left: 0;
@@ -84,7 +76,6 @@
   clip-path: url(#cont-path-two);
   opacity: 0;
 }
-
 .content .content-menu .cont-heart .cont-heart-three {
   position: absolute;
   left: 0;
@@ -97,7 +88,6 @@
   clip-path: url(#cont-path-three);
   opacity: 0;
 }
-
 .content .content-menu .cont-heart .cont-heart-four {
   position: absolute;
   left: 0;
@@ -110,13 +100,11 @@
   clip-path: url(#cont-path-four);
   opacity: 0;
 }
-
 .content .content-menu .cont-heart .cont-heart-one:hover, .content .content-menu .cont-heart .cont-heart-two:hover, .content .content-menu .cont-heart .cont-heart-three:hover, .content .content-menu .cont-heart .cont-heart-four:hover {
   -webkit-animation: heart 800ms forwards;
   animation: heart 800ms forwards;
   opacity: 1;
 }
-
 .content .content-menu .cont-heart .fa-heart {
   position: absolute;
   left: 3px;
@@ -124,24 +112,20 @@
   width: 10px;
   height: 10px;
 }
-
 .content .content-menu .cont-heart .far {
   font-size: 1rem;
   opacity: 1;
   color: black;
 }
-
 .content .content-menu .cont-heart .far:hover {
   display: none;
 }
-
 .content .content-menu .title-meal {
   text-transform: uppercase;
   font-family: "Roboto", serif;
   padding-left: 20px;
   padding-top: 20px;
 }
-
 .content .content-menu .dividing-bar {
   margin-left: 20px;
   border-bottom: solid 4px #99E2D0;
@@ -150,22 +134,18 @@
   width: 40px;
   margin-bottom: 10px;
 }
-
 .content .content-menu .card-title-one {
   -webkit-animation: card-title 1000ms ease-in-out;
   animation: card-title 1000ms ease-in-out;
 }
-
 .content .content-menu .card-title-two {
   -webkit-animation: card-title 1000ms 900ms ease-in-out backwards;
   animation: card-title 1000ms 900ms ease-in-out backwards;
 }
-
 .content .content-menu .card-title-three {
   -webkit-animation: card-title 1000ms 1600ms ease-in-out backwards;
   animation: card-title 1000ms 1600ms ease-in-out backwards;
 }
-
 .content .content-menu .cont-meal {
   border: solid 2px #F2F2F2;
   background-color: white;
@@ -179,7 +159,6 @@
   display: flex;
   cursor: pointer;
 }
-
 .content .content-menu .cont-meal:hover .cont-meal-icon {
   background-color: #99E2D0;
   -webkit-transform: scale(1);
@@ -190,7 +169,6 @@
   transition: 800ms;
   width: 20%;
 }
-
 .content .content-menu .cont-meal:hover .cont-meal-icon .fa-check-circle {
   -webkit-transform: rotate(-360deg);
   transform: rotate(-360deg);
@@ -199,7 +177,6 @@
   -webkit-transition: 400ms;
   transition: 400ms;
 }
-
 .content .content-menu .cont-meal .cont-meal-icon {
   background-color: #99E2D0;
   border-top-right-radius: 10px;
@@ -225,7 +202,6 @@
   -webkit-transition: 500ms;
   transition: 500ms;
 }
-
 .content .content-menu .cont-meal .fa-check-circle {
   opacity: 0;
   font-size: 1rem;
@@ -234,13 +210,11 @@
   position: absolute;
   bottom: 25px;
 }
-
 .content .content-menu .cont-meal:hover .cont-daily {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-
 .content .content-menu .cont-meal .cont-daily {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -248,7 +222,6 @@
   position: relative;
   width: 100%;
 }
-
 .content .content-menu .cont-meal .cont-daily .cont-meal-title {
   font-family: "Roboto", serif;
   font-weight: 600;
@@ -258,7 +231,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .content .content-menu .cont-meal .cont-daily .cont-meal-title-extra {
   font-family: "Roboto", serif;
   font-size: 1rem;
@@ -268,7 +240,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .content .content-menu .cont-meal .cont-daily .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,62 +256,50 @@
   right: 10px;
   bottom: 10px;
 }
-
 .content .content-menu .meal-entree-one {
   -webkit-animation: card-title 1000ms 200ms ease-in-out backwards;
   animation: card-title 1000ms 200ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-entree-two {
   -webkit-animation: card-title 1000ms 400ms ease-in-out backwards;
   animation: card-title 1000ms 400ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-entree-three {
   -webkit-animation: card-title 1000ms 600ms ease-in-out backwards;
   animation: card-title 1000ms 600ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-entree-four {
   -webkit-animation: card-title 1000ms 800ms ease-in-out backwards;
   animation: card-title 1000ms 800ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-dish-one {
   -webkit-animation: card-title 1000ms 1000ms ease-in-out backwards;
   animation: card-title 1000ms 1000ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-dish-two {
   -webkit-animation: card-title 1000ms 1200ms ease-in-out backwards;
   animation: card-title 1000ms 1200ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-dish-three {
   -webkit-animation: card-title 1000ms 1400ms ease-in-out backwards;
   animation: card-title 1000ms 1400ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-dessert-one {
   -webkit-animation: card-title 1000ms 1800ms ease-in-out backwards;
   animation: card-title 1000ms 1800ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-dessert-two {
   -webkit-animation: card-title 1000ms 2000ms ease-in-out backwards;
   animation: card-title 1000ms 2000ms ease-in-out backwards;
 }
-
 .content .content-menu .meal-dessert-three {
   -webkit-animation: card-title 1000ms 2200ms ease-in-out backwards;
   animation: card-title 1000ms 2200ms ease-in-out backwards;
 }
-
 .content .content-menu .content-btn {
   text-align: center;
   margin-top: 40px;
 }
-
 .content .content-menu .content-btn .content-order {
   color: white;
   font-family: "Roboto", serif;
@@ -354,7 +313,6 @@
   -webkit-box-shadow: 4px 4px 9px #cccccc;
   box-shadow: 4px 4px 9px #cccccc;
 }
-
 .content .content-menu .content-btn .content-order:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#ff93e1), to(#ae80e5));
   background: linear-gradient(to right bottom, #ff93e1, #ae80e5);
@@ -376,7 +334,6 @@
     opacity: 1;
   }
 }
-
 @keyframes card-title {
   0% {
     -webkit-transform: translateY(20px);
@@ -389,12 +346,10 @@
     opacity: 1;
   }
 }
-
 footer {
   background-color: #333333;
   color: white;
 }
-
 footer .footer-logo {
   font-family: "Shrikhand", serif;
   font-size: 1.3rem;
@@ -402,28 +357,24 @@ footer .footer-logo {
   text-align: left;
   margin-left: 10px;
 }
-
 footer .footer-link {
   font-family: "Roboto", serif;
   font-size: 1rem;
   padding: 10px 10px 10px 10px;
   margin-left: 10px;
 }
-
 footer .footer-menu {
   text-align: left;
 }
-
 footer .fas.fa-utensils {
   padding-right: 17px;
 }
-
 footer .fas.fa-hands-helping {
   padding-right: 10px;
 }
-
 footer .footer-a {
   text-decoration: none;
   color: white;
 }
+
 /*# sourceMappingURL=menu.css.map */
