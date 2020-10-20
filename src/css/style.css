@@ -328,6 +328,8 @@ div.spinner div.Loading-circle13 {
   top: 12px;
   right: 12px;
   z-index: 1;
+  border-radius: 5px;
+  color: #01644c;
 }
 
 /* image du restaurant */
