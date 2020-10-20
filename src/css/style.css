@@ -1,29 +1,178 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+/* main contenant les deux sections pre-load & content */
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
-/*content */
+/* section pre-load qui concerne l'affichage de l'animation */
+.pre-load {
+  position: fixed;
+  top: 30%;
+  right: 60%;
+  left: 40%;
+  bottom: 70%;
+  width: 80%;
+  background-color: white;
+  -webkit-animation: affich-loading 3s forwards;
+  animation: affich-loading 3s forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.pre-load .loading-message {
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  position: fixed;
+  left: 10%;
+}
+.pre-load .loading-message .loading-name {
+  font-family: "Shrikhand", serif;
+  font-size: 1.5rem;
+}
+.pre-load .spinner {
+  margin: 100px auto;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  left: 45%;
+}
+.pre-load .spinner div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* section contenant le message qui accompagne l'animation spinner */
+/* section de l'animation spinner */
+div.spinner {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+}
+
+.pre-load div.spinner div {
+  width: 12%;
+  height: 26%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to left bottom, #FF79DA, #9356DC);
+  position: absolute;
+  left: 44.5%;
+  top: 37%;
+  opacity: 0;
+  -webkit-animation: fade 1s linear infinite;
+  animation: fade 1s linear infinite;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* partie qui concerne les cercles c'est elle qui leur permet de "tourner" */
+div.spinner div.loading-circle1 {
+  -webkit-transform: rotate(0deg) translate(0, -142%);
+  transform: rotate(0deg) translate(0, -142%);
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+div.spinner div.loading-circle2 {
+  -webkit-transform: rotate(30deg) translate(0, -142%);
+  transform: rotate(30deg) translate(0, -142%);
+  -webkit-animation-delay: -0.9167s;
+  animation-delay: -0.9167s;
+}
+div.spinner div.loading-circle3 {
+  -webkit-transform: rotate(60deg) translate(0, -142%);
+  transform: rotate(60deg) translate(0, -142%);
+  -webkit-animation-delay: -0.833s;
+  animation-delay: -0.833s;
+}
+div.spinner div.loading-circle4 {
+  -webkit-transform: rotate(90deg) translate(0, -142%);
+  transform: rotate(90deg) translate(0, -142%);
+  -webkit-animation-delay: -0.75s;
+  animation-delay: -0.75s;
+}
+div.spinner div.loading-circle5 {
+  -webkit-transform: rotate(120deg) translate(0, -142%);
+  transform: rotate(120deg) translate(0, -142%);
+  -webkit-animation-delay: -0.667s;
+  animation-delay: -0.667s;
+}
+div.spinner div.loading-circle6 {
+  -webkit-transform: rotate(150deg) translate(0, -142%);
+  transform: rotate(150deg) translate(0, -142%);
+  -webkit-animation-delay: -0.5833s;
+  animation-delay: -0.5833s;
+}
+div.spinner div.loading-circle7 {
+  -webkit-transform: rotate(180deg) translate(0, -142%);
+  transform: rotate(180deg) translate(0, -142%);
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+div.spinner div.loading-circle8 {
+  -webkit-transform: rotate(210deg) translate(0, -142%);
+  transform: rotate(210deg) translate(0, -142%);
+  -webkit-animation-delay: -0.41667s;
+  animation-delay: -0.41667s;
+}
+div.spinner div.loading-circle9 {
+  -webkit-transform: rotate(240deg) translate(0, -142%);
+  transform: rotate(240deg) translate(0, -142%);
+  -webkit-animation-delay: -0.333s;
+  animation-delay: -0.333s;
+}
+div.spinner div.loading-circle10 {
+  -webkit-transform: rotate(270deg) translate(0, -142%);
+  transform: rotate(270deg) translate(0, -142%);
+  -webkit-animation-delay: -0.25s;
+  animation-delay: -0.25s;
+}
+div.spinner div.loading-circle11 {
+  -webkit-transform: rotate(300deg) translate(0, -142%);
+  transform: rotate(300deg) translate(0, -142%);
+  -webkit-animation-delay: -0.1667s;
+  animation-delay: -0.1667s;
+}
+div.spinner div.loading-circle12 {
+  -webkit-transform: rotate(330deg) translate(0, -142%);
+  transform: rotate(330deg) translate(0, -142%);
+  -webkit-animation-delay: -0.0833s;
+  animation-delay: -0.0833s;
+}
+div.spinner div.Loading-circle13 {
+  -webkit-transform: rotate(330deg) translate(0, -142%);
+  transform: rotate(330deg) translate(0, -142%);
+  -webkit-animation-delay: -0.05s;
+  animation-delay: -0.05s;
+}
+
+/* content début de l'affichage de la page d'accueil */
 .content {
   background-color: #F2F2F2;
   position: relative;
   overflow: hidden;
   z-index: 1;
   -webkit-animation: affich 5s;
-          animation: affich 5s;
+  animation: affich 5s;
   width: 100%;
 }
 
-/*Header */
+/* header partie qui reviens sur toutes les pages */
 .header-logo {
   text-align: center;
   font-family: "Shrikhand", serif;
   font-size: 2rem;
 }
 
-/*Search */
+/* partie recherche */
 .search {
   background-color: #d9d9d9;
   text-align: center;
@@ -33,7 +182,6 @@
   width: 100%;
   height: 20px;
 }
-
 .search .search-input {
   border: none;
   background-color: #d9d9d9;
@@ -44,46 +192,19 @@
   font-size: 1rem;
   text-align: center;
 }
-
-.search .search-input::-webkit-input-placeholder {
+.search .search-input::-webkit-input-placeholder, .search .search-input:-ms-input-placeholder, .search .search-input::-ms-input-placeholder, .search .search-input::placeholder {
   color: black;
 }
-
-.search .search-input:-ms-input-placeholder {
-  color: black;
-}
-
-.search .search-input::-ms-input-placeholder {
-  color: black;
-}
-
-.search .search-input::placeholder {
-  color: black;
-}
-
-.search .search-input:focus::-webkit-input-placeholder {
+.search .search-input:focus::-webkit-input-placeholder, .search .search-input:focus:-ms-input-placeholder, .search .search-input:focus::-ms-input-placeholder, .search .search-input:focus::placeholder {
   color: transparent;
 }
 
-.search .search-input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-.search .search-input:focus::-ms-input-placeholder {
-  color: transparent;
-}
-
-.search .search-input:focus::placeholder {
-  color: transparent;
-}
-
-/*cont-one */
+/* section de présentation */
 .cont-one {
   background-color: #F2F2F2;
   text-align: center;
   padding: 20px 20px;
 }
-
 .cont-one .cont-one-booking {
   font-family: "Roboto", serif;
   font-size: 1.8rem;
@@ -92,7 +213,6 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-
 .cont-one .cont-one-discovery {
   font-family: "Roboto", serif;
   font-size: 1rem;
@@ -100,7 +220,6 @@
   width: 80%;
   margin: 0px auto;
 }
-
 .cont-one .exploration {
   text-align: center;
   margin-top: 20px;
@@ -115,43 +234,40 @@
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   -webkit-box-shadow: 4px 4px 9px #cccccc;
-          box-shadow: 4px 4px 9px #cccccc;
+  box-shadow: 4px 4px 9px #cccccc;
 }
-
 .cont-one .exploration:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#ff93e1), to(#ae80e5));
   background: linear-gradient(to right bottom, #ff93e1, #ae80e5);
   -webkit-box-shadow: 4px 4px 4px #bfbfbf;
-          box-shadow: 4px 4px 4px #bfbfbf;
+  box-shadow: 4px 4px 4px #bfbfbf;
 }
 
-/*cont-two */
+/* effet au passage de la souris "ombre blanche sur le bouton et une ombre de contour plus voyante */
+/* section qui contient la partie consignes à suivre */
 .cont-two .cont-two-how {
   font-family: "Roboto", serif;
   font-size: 1.8rem;
   font-weight: 600;
   padding: 20px 20px;
 }
-
 .cont-two .cont-two-btn {
   border: solid 1px #F2F2F2;
   border-radius: 20px;
-  padding: 10px 25px;
-  margin: 20px 20px;
+  padding: 10px 20px;
+  margin: 20px 10px;
   font-family: "Roboto", serif;
   font-weight: 600;
   font-size: 1rem;
   position: relative;
   -webkit-box-shadow: 4px 4px 9px #d9d9d9;
-          box-shadow: 4px 4px 9px #d9d9d9;
+  box-shadow: 4px 4px 9px #d9d9d9;
 }
-
 .cont-two .cont-two-btn:hover {
   background-color: #ffe9f9;
   -webkit-box-shadow: 4px 4px 4px #d9d9d9;
-          box-shadow: 4px 4px 4px #d9d9d9;
+  box-shadow: 4px 4px 4px #d9d9d9;
 }
-
 .cont-two .cont-two-numb {
   background-color: #9356DC;
   border-radius: 50%;
@@ -164,66 +280,76 @@
   color: white;
   font-size: 0.6rem;
 }
-
 .cont-two .cont-two-icon {
   padding-right: 50px;
 }
 
-/*cont-three */
+/* effet sur l'ombre du contour au hover */
+/* cette partie concerne les icone numérotés */
+/* cette partie les icones qui se trouvent à côté des icones numérotés */
+/* section qui concerne les restaurants */
 .cont-three {
   background-color: #F2F2F2;
   width: 100%;
   margin: 20px 0 0 0;
   padding-bottom: 20px;
 }
-
 .cont-three .cont-three-which {
   font-family: "Roboto", serif;
   font-size: 2rem;
   font-weight: 600;
   padding: 20px 15px;
 }
-
 .cont-three .cont-three-card {
   width: 90%;
   height: 260px;
   border: solid 2px #F2F2F2;
   border-radius: 20px;
   -webkit-box-shadow: 6px 8px 9px #d9d9d9;
-          box-shadow: 6px 8px 9px #d9d9d9;
+  box-shadow: 6px 8px 9px #d9d9d9;
   background-color: white;
   position: relative;
   margin: 20px auto;
 }
-
 .cont-three .cont-three-card .menu-link {
   text-decoration: none;
   color: black;
   font-size: 1rem;
 }
 
+/* titre */
+/* carte restaurant */
+/* partie lien de la carte */
+/* étiquette nouveau */
+.menu-link .new {
+  position: absolute;
+  padding: 10px 26px;
+  background-color: #99e2d0;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+}
+
+/* image du restaurant */
 .cont-three .cont-three-card .menu-link .cont-three-img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-
 .cont-three .cont-three-card .menu-link .cont-three-name {
   font-family: "Roboto", serif;
   font-size: 1.3rem;
   font-weight: 600;
   padding: 5px 10px;
 }
-
 .cont-three .cont-three-card .menu-link .cont-three-town {
   font-family: "Roboto", serif;
   font-size: 1.2rem;
   padding: 0 10px 10px 10px;
 }
-
 .cont-three .cont-three-card .cont-three-heart {
   border: none;
   position: absolute;
@@ -232,7 +358,6 @@
   color: white;
   background-color: white;
 }
-
 .cont-three .cont-three-card .cont-three-heart .fa-heart {
   position: absolute;
   left: 3px;
@@ -240,17 +365,14 @@
   width: 10px;
   height: 10px;
 }
-
 .cont-three .cont-three-card .cont-three-heart .far {
   font-size: 1rem;
   opacity: 1;
   color: black;
 }
-
 .cont-three .cont-three-card .cont-three-heart .far:hover {
   display: none;
 }
-
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-one {
   position: absolute;
   left: 0;
@@ -259,21 +381,28 @@
   height: 23px;
   background-color: white;
   -webkit-clip-path: url("#cont-three-path-one");
-          clip-path: url("#cont-three-path-one");
+  clip-path: url("#cont-three-path-one");
   opacity: 0;
 }
 
-/*cont-three-heart */
+/* nom du restaurant */
+/* ville du restaurant */
+/* partie coeur */
+/* icone coeur */
+/* icone coeur */
+/* icone coeur disparition au hover */
+/* partie coeur suite en svg pour le moment non visible */
+/* contour noir au coeur */
 path {
-  border-color: black 1px solid;
+  border-color: black;
 }
 
+/* animation au hover, le remplissage du coeur par un background en linear-gradient */
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-one:hover {
   -webkit-animation: heart 800ms forwards;
-          animation: heart 800ms forwards;
+  animation: heart 800ms forwards;
   opacity: 1;
 }
-
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-two {
   position: absolute;
   left: 0;
@@ -282,16 +411,14 @@ path {
   height: 23px;
   background-color: white;
   -webkit-clip-path: url(#cont-three-path-two);
-          clip-path: url(#cont-three-path-two);
+  clip-path: url(#cont-three-path-two);
   opacity: 0;
 }
-
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-two:hover {
   -webkit-animation: heart 800ms forwards;
-          animation: heart 800ms forwards;
+  animation: heart 800ms forwards;
   opacity: 1;
 }
-
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-three {
   position: absolute;
   left: 0;
@@ -300,16 +427,14 @@ path {
   height: 23px;
   background-color: white;
   -webkit-clip-path: url(#cont-three-path-three);
-          clip-path: url(#cont-three-path-three);
+  clip-path: url(#cont-three-path-three);
   opacity: 0;
 }
-
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-three:hover {
   -webkit-animation: heart 800ms forwards;
-          animation: heart 800ms forwards;
+  animation: heart 800ms forwards;
   opacity: 1;
 }
-
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-four {
   position: absolute;
   left: 0;
@@ -318,21 +443,20 @@ path {
   height: 23px;
   background-color: white;
   -webkit-clip-path: url(#cont-three-path-four);
-          clip-path: url(#cont-three-path-four);
+  clip-path: url(#cont-three-path-four);
   opacity: 0;
 }
-
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-four:hover {
   -webkit-animation: heart 800ms forwards;
-          animation: heart 800ms forwards;
+  animation: heart 800ms forwards;
   opacity: 1;
 }
 
+/* partie footer du site */
 footer {
   background-color: #333333;
   color: white;
 }
-
 footer .footer-logo {
   font-family: "Shrikhand", serif;
   font-size: 1.3rem;
@@ -340,31 +464,27 @@ footer .footer-logo {
   text-align: left;
   margin-left: 10px;
 }
-
 footer .footer-link {
   font-family: "Roboto", serif;
   font-size: 1rem;
   padding: 10px 10px 10px 10px;
   margin-left: 10px;
 }
-
 footer .footer-menu {
   text-align: left;
 }
-
 footer .fas.fa-utensils {
   padding-right: 17px;
 }
-
 footer .fas.fa-hands-helping {
   padding-right: 10px;
 }
-
 footer .footer-a {
   text-decoration: none;
   color: white;
 }
 
+/* animation coeur */
 @-webkit-keyframes heart {
   0% {
     background-color: white;
@@ -446,7 +566,6 @@ footer .footer-a {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%);
   }
 }
-
 @keyframes heart {
   0% {
     background-color: white;
@@ -528,4 +647,3 @@ footer .footer-a {
     background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%);
   }
 }
-/*# sourceMappingURL=style.css.map */

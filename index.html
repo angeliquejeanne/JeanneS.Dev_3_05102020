@@ -6,9 +6,10 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="./src/sass/accueil/style.css"/>
-  <link rel="stylesheet" href="./src/sass/queries/media-queries.css">
-  <link rel="stylesheet" href="./src/sass/anim/animations.css">
+  <meta name="description" content="Ohmyfood! site de réservation de restaurants en ligne, création de menu, gains de temps, plus d'attente en restaurant, Paris">
+  <link rel="stylesheet" href="./src/css/style.css"/>
+  <link rel="stylesheet" href="./src/css/animations.css">
+  <link rel="stylesheet" href="./src/css/media-queries.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
   <title>Oh my food</title>
@@ -16,11 +17,13 @@
 </head>
 
 <body>
-
-    <div class="container">
-
+    <!-- le balise main va contenir les deux sections celle de l'animation 
+    pre-load et celle content qui elle va contenir le code de la page accueil-->
+    <main class="container">
+        <!-- cette partie est elle même une animation qui en contient 
+            une autre la spinner-->
         <div class="pre-load">
-
+            <!-- animation spinner -->
             <div class="spinner">
                 <div class="loading-circle1"></div>
                 <div class="loading-circle2"></div>
@@ -34,50 +37,56 @@
                 <div class="loading-circle10"></div>
                 <div class="loading-circle11"></div>
                 <div class="loading-circle12"></div>
-              </div>
+            </div>
+            <!--message qui accompagne l'animation spinner-->
+            <div class="loading-message">
+                <span class="loading-name">Ohmyfood</span> 
+                arrive dans quelques instants !
+            </div>
 
-            <div class="loading-message"><span class="loading-name">Ohmyfood</span> arrive dans quelques instants !</div>
         </div>
-        
-        <div class="content">
-            
 
+        <!-- Cette section contient la page d'accueil du site-->
+        <div class="content">
+            <!-- header contenant le logo du site que l'on retrouve sur chaque pages-->
             <header>
                 <div class="header-logo">Ohmyfood</div>
             </header>
-
-            <div class="search">
+            <!-- cette partie contient la barre de recherche, qui permettra par la suite
+            de trouver un restaurant proche de chez soi -->
+            <form class="search">
               <i class="fas fa-map-marker-alt"></i>
               <input class="search-input" type="search" name="recherche" placeholder="Paris, Belleville"/>
-            </div>
-
+            </form>
+            <!-- cette section est la partie présentation -->
             <div class="cont-one">
                 <div class="cont-one-booking">Réservez le menu qui vous convient</div>
-                <div class="cont-one-discovery">Découvrez des restaurants d'exception, sélectionnés par nos soins.</div>
+                <p class="cont-one-discovery">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button class="exploration">Explorer nos restaurants</button>
             </div>
-
+            <!-- cette partie contient les consignes à suivre-->
             <div class="cont-two">
-                <div class="cont-two-how">Fonctionnement</div>
-                <div class="cont-two-btn"><span class="cont-two-numb">1</span><i class="fas fa-mobile-alt cont-two-icon"></i>Choisissez un restaurant</div>
-                <div class="cont-two-btn"><span class="cont-two-numb">2</span><i class="fas fa-list-ul cont-two-icon"></i>Composez votre menu</div>
-                <div class="cont-two-btn"><span class="cont-two-numb">3</span><i class="fas fa-store cont-two-icon"></i>Dégustez au restaurant</div>
+              <div class="cont-two-how">Fonctionnement</div>
+              <p class="cont-two-btn"><span class="cont-two-numb">1</span><i class="fas fa-mobile-alt cont-two-icon"></i>Choisissez un restaurant</p>
+              <p class="cont-two-btn"><span class="cont-two-numb">2</span><i class="fas fa-list-ul cont-two-icon"></i>Composez votre menu</p>
+              <p class="cont-two-btn"><span class="cont-two-numb">3</span><i class="fas fa-store cont-two-icon"></i>Dégustez au restaurant</p>
             </div>
-
-            <div class="cont-three"> <!--div qui englobe la partie présentant les restaurants -->
+            <!-- section concernant les restaurants -->
+            <div class="cont-three"> 
 
                 <div class="cont-three-which">Restaurants</div>
-
+                <!-- section qui va afficher les cartes restaurants-->
                 <div class="cont-three-listing">
-
+                    <!-- première carte de restaurant-->
                     <div class="cont-three-card">
-
+                        <!-- la carte complète est un lien cliquable -->
                         <a class="menu-link" href="src/links/menu1.html">
+                            <span class="new"><small>Nouveau</small></span>
                             <div class="cont-three-pict"><img class="cont-three-img" src="./src/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de la palette du goût"/></div>
                             <div class="cont-three-name">La palette du goût</div>
                             <div class="cont-three-town">Ménilmontant</div>
                         </a>
-
+                        <!-- partie contenant le bouton coeur -->
                         <button class="cont-three-heart">
                             <i class="far fa-heart"></i>
                             <svg class="cont-three-heart-one" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -92,13 +101,14 @@
                     </div>
 
                     <div class="cont-three-card">
-
+                        <!-- la carte complète est un lien cliquable -->
                         <a class="menu-link" href="src/links/menu2.html">
+                            <span class="new"><small>Nouveau</small></span>
                             <div class="cont-three-pict"><img class="cont-three-img" src="./src/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de la note enchantée"/></div>
                             <div class="cont-three-name">La note enchantée</div>
                             <div class="cont-three-town">Charonne</div>
                         </a>
-
+                        <!-- partie contenant le bouton coeur -->
                         <button class="cont-three-heart">
                             <i class="far fa-heart"></i>
                             <svg class="cont-three-heart-two" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -113,13 +123,13 @@
                     </div>
 
                     <div class="cont-three-card">
-
+                        <!-- la carte complète est un lien cliquable -->
                         <a class="menu-link" href="src/links/menu3.html">
                             <div class="cont-three-pict"><img class="cont-three-img" src="./src/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo de à la française"/></div>
                             <div class="cont-three-name">A la française</div>
                             <div class="cont-three-town">Cité Rouge</div>    
                         </a>
-
+                        <!-- partie contenant le bouton coeur -->
                         <button class="cont-three-heart">
                             <i class="far fa-heart"></i>
                             <svg class="cont-three-heart-three" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -134,13 +144,13 @@
                     </div>
 
                     <div class="cont-three-card">
-
+                        <!-- la carte complète est un lien cliquable -->
                         <a class="menu-link" href="src/links/menu4.html">
                             <div class="cont-three-pict"><img class="cont-three-img" src="./src/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo de le délice des sens"/></div>
                             <div class="cont-three-name">Le délice des sens</div>
                             <div class="cont-three-town">Folie-Méricourt</div>
                         </a> 
-                          
+                        <!-- partie contenant le bouton coeur -->
                         <button class="cont-three-heart">
                             <i class="far fa-heart"></i>
                             <svg class="cont-three-heart-four" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -157,10 +167,9 @@
                 </div>
 
             </div>
-
-
+          <!-- partie footer du site -->
           <footer>
-
+              <!-- section contenant le logo-->
               <div class="footer-logo">Ohmyfood</div>
 
                 <div class="footer-menu">
@@ -176,9 +185,7 @@
 
         </div>
 
-
-
-    </div>
+    </main>
 
 </body>
 

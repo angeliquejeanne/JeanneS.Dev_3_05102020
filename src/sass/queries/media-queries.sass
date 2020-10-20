@@ -4,7 +4,6 @@
     width: 1450px
 
 /*queries content
-
 /* queries header
 @media screen and (min-width: 768px) and (max-width: 1023px)
   .header-logo
@@ -115,6 +114,7 @@
 
 @media screen and (min-width: 1024px)
   .cont-three .cont-three-listing
+    display: -ms-grid
     display: grid
     grid-template-columns: repeat(2, 1fr)
 
@@ -151,7 +151,11 @@
 @media screen and (min-width: 1024px)
   footer .footer-logo
     font-size: 1.8rem
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
 
 @media screen and (min-width: 768px) and (max-width: 1023px)
