@@ -10,7 +10,7 @@
 /* section pre-load qui concerne l'affichage de l'animation */
 .pre-load {
   position: fixed;
-  top: 30%;
+  top: 20%;
   right: 60%;
   left: 40%;
   bottom: 70%;
@@ -23,18 +23,19 @@
 }
 .pre-load .loading-message {
   font-family: "Roboto", serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
   width: 80%;
   position: fixed;
   left: 10%;
+  margin-bottom: 120px;
 }
 .pre-load .loading-message .loading-name {
   font-family: "Shrikhand", serif;
   font-size: 1.5rem;
 }
 .pre-load .spinner {
-  margin: 100px auto;
+  margin: 190px auto;
   width: 60px;
   height: 60px;
   position: fixed;
@@ -274,7 +275,7 @@ div.spinner div.Loading-circle13 {
   width: 20px;
   line-height: 20px;
   position: absolute;
-  left: -10px;
+  left: -5px;
   top: 10px;
   text-align: center;
   color: white;
@@ -328,6 +329,8 @@ div.spinner div.Loading-circle13 {
   top: 12px;
   right: 12px;
   z-index: 1;
+  border-radius: 5px;
+  color: #01644c;
 }
 
 /* image du restaurant */
@@ -456,18 +459,19 @@ path {
 footer {
   background-color: #333333;
   color: white;
+  padding-bottom: 20px;
 }
 footer .footer-logo {
   font-family: "Shrikhand", serif;
   font-size: 1.3rem;
   padding: 20px 10px 10px 10px;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 footer .footer-link {
   font-family: "Roboto", serif;
   font-size: 1rem;
-  padding: 10px 10px 10px 10px;
   margin-left: 10px;
 }
 footer .footer-menu {
