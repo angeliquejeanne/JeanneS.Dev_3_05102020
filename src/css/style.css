@@ -348,13 +348,15 @@ div.spinner div.Loading-circle13 {
   font-family: "Roboto", serif;
   font-size: 1.3rem;
   font-weight: 600;
-  padding: 5px 10px;
+  margin-top: 5px;
+  padding: 0px 10px;
 }
 .cont-three .cont-three-card .menu-link .cont-three-town {
   font-family: "Roboto", serif;
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.6);
-  padding: 0 10px 10px 10px;
+  padding:0px 10px;
+  margin-top: -15px;
 }
 .cont-three .cont-three-card .cont-three-heart {
   border: none;
@@ -363,6 +365,7 @@ div.spinner div.Loading-circle13 {
   bottom: 35px;
   color: white;
   background-color: white;
+  margin-top: -15px;
 }
 .cont-three .cont-three-card .cont-three-heart .fa-heart {
   position: absolute;
@@ -370,11 +373,13 @@ div.spinner div.Loading-circle13 {
   top: 6px;
   width: 10px;
   height: 10px;
+  margin-top: -15px;
 }
 .cont-three .cont-three-card .cont-three-heart .far {
   font-size: 1rem;
   opacity: 1;
   color: black;
+  margin-top: -15px;
 }
 .cont-three .cont-three-card .cont-three-heart .far:hover {
   display: none;
@@ -389,6 +394,7 @@ div.spinner div.Loading-circle13 {
   -webkit-clip-path: url("#cont-three-path-one");
   clip-path: url("#cont-three-path-one");
   opacity: 0;
+  margin-top: -15px;
 }
 
 /* nom du restaurant */
@@ -419,6 +425,7 @@ path {
   -webkit-clip-path: url(#cont-three-path-two);
   clip-path: url(#cont-three-path-two);
   opacity: 0;
+  margin-top: -15px;
 }
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-two:hover {
   -webkit-animation: heart 800ms forwards;
@@ -435,6 +442,7 @@ path {
   -webkit-clip-path: url(#cont-three-path-three);
   clip-path: url(#cont-three-path-three);
   opacity: 0;
+  margin-top: -15px;
 }
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-three:hover {
   -webkit-animation: heart 800ms forwards;
@@ -451,6 +459,7 @@ path {
   -webkit-clip-path: url(#cont-three-path-four);
   clip-path: url(#cont-three-path-four);
   opacity: 0;
+  margin-top: -15px;
 }
 .cont-three .cont-three-card .cont-three-heart .cont-three-heart-four:hover {
   -webkit-animation: heart 800ms forwards;
