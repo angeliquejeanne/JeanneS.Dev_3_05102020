@@ -348,7 +348,7 @@ div.spinner div.Loading-circle13 {
   font-family: "Roboto", serif;
   font-size: 1.3rem;
   font-weight: 600;
-  margin-top: 5px;
+  margin-top: 0px;
   padding: 0px 10px;
 }
 .cont-three .cont-three-card .menu-link .cont-three-town {
@@ -365,7 +365,7 @@ div.spinner div.Loading-circle13 {
   bottom: 35px;
   color: white;
   background-color: white;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 .cont-three .cont-three-card .cont-three-heart .fa-heart {
   position: absolute;
